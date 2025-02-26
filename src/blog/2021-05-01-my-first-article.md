@@ -1,6 +1,6 @@
 ---
 title: My First Article
-author: Kevin Powell
+author: Jméno autora
 date: 2021-05-01
 tags: ["post", "featured"]
 image: /assets/blog/article-1.jpg
