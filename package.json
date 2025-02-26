@@ -12,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "decap-cms-app": "^3.6.2"
   }
 }
- 
