@@ -5,9 +5,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin/config.yml");
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
   });
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  eleventyConfig.addCollection("newestPosts", async (collectionsApi) => {
+    const posts = collectionsApi.getFilteredByTag("post");
+		return posts.reverse().slice(0, 3);
+	});
 
   return {
     dir: {
