@@ -22,15 +22,21 @@ layout: base.njk
     {{ content | safe }}
 
      <figure class="main-article__figure">
-      <figcaption>
-        {{ file1 }}
-      </figcaption>
-      <figcaption>
-        {{ file2 }}
-      </figcaption>
-      <figcaption>
-        {{ file3 }}
-      </figcaption>
+      {% if file1 %}
+        <figcaption>
+          &#128206; <a href="{{ file1 }}" target="_blank" class="link files">{{ file1.split('/').pop() }}</a>
+        </figcaption>
+      {% endif %}
+      {% if file2 %}
+        <figcaption>
+          &#128206; <a href="{{ file2 }}" target="_blank" class="link files">{{ file2.split('/').pop() }}</a>
+        </figcaption>
+      {% endif %}
+      {% if file3 %}
+        <figcaption>
+          &#128206; <a href="{{ file3 }}" target="_blank" class="link files">{{ file3.split('/').pop() }}</a>
+        </figcaption>
+      {% endif %}
     </figure>
   </div>
 </article>

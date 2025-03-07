@@ -176,6 +176,10 @@ strong {
   color: var(--clr-primary-400);
 }
 
+.link.files {
+  color: var(--clr-primary-400);
+}
+
 .link:hover {
   --offset: 0.3em;
 }
