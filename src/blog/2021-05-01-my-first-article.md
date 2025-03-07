@@ -1,11 +1,14 @@
 ---
-title: Můj první vytvořený testovací článek
 author: Jiri Korejtko
+imageAlt: This is a test
+title: Můj první vytvořený testovací článek
 date: 2025-03-07T15:40:00.000Z
 tags:
   - post
+file1: /assets/blog/blank-copy-2.pdf
+file2: /assets/blog/blank-copy.pdf
+file3: /assets/blog/blank.pdf
 image: /assets/blog/article-1.jpg
-imageAlt: This is a test
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
   Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae
   delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio
