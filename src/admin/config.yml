@@ -10,11 +10,27 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Image Alt", name: "imageAlt", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Nadpis", name: "title", widget: "string"}
+      - {label: "Autor", name: "author", widget: "string"}
+      - {label: "Datum vytvoření", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "hidden", default: ["post"]}
+      - {label: "Anotace", name: "description", widget: "text"}
+      - {label: "Tělo článku", name: "body", widget: "markdown"}
+      - {
+        label: "Příloha č.1",
+        name: "file1",
+        widget: "file",
+        required: false,
+        }
+      - {
+        label: "Příloha č.2",
+        name: "file2",
+        widget: "file",
+        required: false,
+        }
+      - {
+        label: "Příloha č.3",
+        name: "file3",
+        widget: "file",
+        required: false,
+        }
